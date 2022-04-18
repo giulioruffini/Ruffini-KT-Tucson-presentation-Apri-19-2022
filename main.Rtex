@@ -6,7 +6,8 @@
 \newcommand{\SEP}{$\mathcal S$\xspace}
 \newcommand{\K}{$\mathcal K$\xspace}
 \newcommand{\Ko}{\mathcal K}
-
+\usepackage{silence}
+\WarningsOff[everypage]
 
 \include{varia/preamble}
 
