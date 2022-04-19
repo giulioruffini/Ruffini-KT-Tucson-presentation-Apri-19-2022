@@ -1,7 +1,7 @@
 \section{AIT and Kolmogorov complexity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[label=intro3]{Kolmogorov complexity ($\Ko$) I}
- We can think of agents as physical systems, and in turn,  of physical systems as dynamical systems implementing functions.   This allows us to analyze agents from the standpoint of computation theory.
+ We can think of agents as physical systems, and in turn,  of physical systems as dynamical systems calculating (effectively computable) functions.   This allows us to analyze agents from the standpoint of computation theory.
  \begin{alertblock}{Warning: Computation is a mathematical concept (Turing machine)}
 The use of computational framework  in KT should not be construed to mean that the brain is literally a physical von Neumann computer (such as a laptop).
 \end{alertblock}\vfill 
@@ -20,7 +20,7 @@ The length of the shortest program capable of generating  the dataset \citep{Kol
 \begin{frame}[label=intro3]{Kolmogorov complexity ($\Ko$) II}
  \begin{center}%\includegraphics[height=1.2cm]{COPL}%
   %\hspace{2cm}
-  \includegraphics[height=7.cm]{img/pi.png}
+  \includegraphics[height=7.2cm]{img/pi.png}
   \end{center}
 \end{frame}
 
@@ -32,9 +32,10 @@ With
 \begin{definition}[Mutual algorithmic information complexity  $\mathcal M$]
 The {\em mutual algorithmic information  $\mathcal M(x:y)$ between two strings $x$ and $y$, is given by  }
 $$
-\mathcal M(x \!:\!y) = \Ko(x) +\Ko(y)- \Ko(x,y),
+\mathcal M(x \!:\!y) = \Ko(x) +\Ko(y)- \Ko(x,y)
 $$
-where $\Ko(y|x)$ is the complexity of the string $y$ if the computer has access to $x$ \citep{Li:1997aa, Grunwald:2004aa}.  
+%where $\Ko(y|x)$ is the complexity of the string $y$ if the computer has access to $x$ 
+\citep{Li:1997aa, Grunwald:2004aa}.  
 \end{definition}
 \end{frame}
 
@@ -82,7 +83,7 @@ $y = f(\theta)$, where $y$ is the image in a frame and $\theta$ a parametrizatio
   %\hspace{2cm}
   \includegraphics[height=5cm]{img/hands.png}
   \end{center}
-  The structure of the dataset is encapsulated by the function $f$, or the minimal program that encodes it and that constitutes the {\em invariant} object.  The {\bf symmetries} of the dataset are parametrized by $\theta$, and they are symmetries in the sense that if $\theta\rightarrow \theta'$ and $y\rightarrow y'$, then the equation $y'-f(\theta') =0 $ holds true.
+  The structure of the dataset is encapsulated by the minimal program that encodes the function $y=f(x)$---the {\em invariant} object.  %The {\bf symmetries} of the dataset are parametrized by $\theta$, and they are symmetries in the sense that if $\theta\rightarrow \theta'$ and $y\rightarrow y'$, then the equation $y'-f(\theta') =0 $ holds true.
 \end{frame}
 
 
@@ -90,19 +91,17 @@ $y = f(\theta)$, where $y$ is the image in a frame and $\theta$ a parametrizatio
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[label=ladila]{Why are ``good models'' good?}
 
-The rationale for the importance of compressive (succinct) models is discussed in detail in \cite{Ruffini:2009aa,Ruffini2017}.  Rephrase of the principle of Occam’s Razor: {\em
-one should not increase, beyond what is necessary, the number of entities required to explain anything.}  \vfill
+The rationale for the importance of compressive (succinct) models is discussed in detail in \cite{Ruffini:2007aa,Ruffini:2009aa,Ruffini2017}.  Rephrase of the principle of Occam’s Razor: {\em
+one should not increase, beyond what is necessary, the number of entities required to explain anything.}  Ok, but why?\vfill
 
-The universe appears to be simple.\vfill
+The universe appears to be simple. Simple rules can create apparent complexity.\vfill
 
 
 Simple data generators are more likely if the universe rules are drawn from a random algorithmic bingo (Solomonoff's prior). \vfill
 
-Simple models are less biased and generalize better (Occam, Laplace, Jaynes). \vfill
+Simple models are unbiased and generalize better (Occam, Laplace, Jaynes). \vfill
 
-They are easier to construct. \vfill
-
-More economical, easier to store, use and reuse for model-building. \vfill
+They are easier to construct,  store,  and reuse for model-building. \vfill
 
 
 %Simple models can be maximally powerful (Turing complete)
