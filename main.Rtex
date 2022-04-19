@@ -7,6 +7,7 @@
 \newcommand{\K}{$\mathcal K$\xspace}
 \newcommand{\Ko}{\mathcal K}
 \usepackage{silence}
+\usepackage{multicol}
 \WarningsOff[everypage]
 
 \include{varia/preamble}
@@ -72,7 +73,7 @@
 %% =========
 
 \begin{frame}[allowframebreaks]{References}
-\bibliographystyle{apalike} 
+\bibliographystyle{alpha} 
 \bibliography{varia/kolmogorov}  
  
 \end{frame}
